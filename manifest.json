@@ -1,0 +1,21 @@
+{
+  "name": "URL shortener",
+  "description": "Provides quick acces to googles's URL shortener",
+  "version": "0.1",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "clipboardWrite",
+    "https://www.googleapis.com/urlshortener/v1/url"
+   ],
+  "background": {
+    "page": "background.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16":  "shorts.png",
+    "48":  "shorts.png",
+    "128": "shorts.png"
+  },
+  "manifest_version": 2
+}
