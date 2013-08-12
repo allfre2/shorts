@@ -1,5 +1,5 @@
 {
-  "name": "URL shortener",
+  "name": "shorts",
   "description": "Provides quick acces to googles's URL shortener",
   "version": "0.1",
   "permissions": [
