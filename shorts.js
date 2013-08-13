@@ -20,7 +20,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 var title = "shorts"
-var googl = document.getElementById("_");
+var text = document.getElementById("_");
 var APIUrl = "https://www.googleapis.com/urlshortener/v1/url";
 var xhr = new XMLHttpRequest();
 var response;
@@ -33,11 +33,13 @@ function shortURL(url){
  xhr.onload = function () {
   response = JSON.parse(xhr.responseText);
   if(!response.error){
-     googl.value = response.id;
-     googl.focus();
-     googl.select();
+     /* Hack. Chrome clipboard api is experimental?!*/
+     text.value = response.id;
+     text.focus();
+     text.select();
      document.execCommand("copy");
-     googl.value = "";
+     text.value = "";
+     /**/
   }else alert("Failed!"); 
  };
  xhr.send( "{ longUrl: \"" + url + "\" }" );
@@ -62,4 +64,3 @@ chrome.contextMenus.create({"title": title, "contexts":["page"],
 
 chrome.contextMenus.create({"title": title, "contexts":["link"],
                                        "onclick": link});
-
