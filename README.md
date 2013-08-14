@@ -1,7 +1,7 @@
 #      shorts
 
-![shorty pants](/shorts.png "shorts")
-
+![shorty pants](shorts.png "shorts")
+<img src="shorts.png" alt="shorts" style="width: 200px;height:200px;"/>
 #### *Easy access to Google's URL shortener API*
 My first google chromium extension. 
 
