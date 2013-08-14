@@ -1,6 +1,5 @@
 # shorts
 
-### *Easy access to Google's URL shortener API*
 	
 	   -----------
 	   |___[|]___|
@@ -9,6 +8,7 @@
 	/     |  |     |
 	======   ======
 
+### *Easy access to Google's URL shortener API*
 My first google chromium extension. 
 
 Access google's goo.gl URL shortener 
